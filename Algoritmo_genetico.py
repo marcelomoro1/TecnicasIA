@@ -21,7 +21,8 @@ class Cromossomo:
             penalidade += 20 * (len(self.rota) - len(set(self.rota)))
         
         return penalidade
-    
+        
+    #Comparar para utilizar o sort
     def __lt__(self, other):
         return self.penalidade < other.penalidade
     
